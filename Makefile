@@ -26,6 +26,7 @@ $(NAME): $(OBJ)
 	@make -C libft/ all
 	@cp libft/libft.a ./
 	@gcc $(FLAGS) $(OBJ) -o $(NAME) libft.a
+	@make clean
 
 $(OBJ):
 	@gcc $(FLAGS) -c $(SRC) -I .

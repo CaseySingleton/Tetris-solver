@@ -24,6 +24,7 @@ int			main(int argc, char *argv[])
 		if (fd > -1)
 			fillit(fd);
 	}
+	ft_putchar('\n');
 	close(fd);
 	return (0);
 }
